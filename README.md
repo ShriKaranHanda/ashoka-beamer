@@ -53,6 +53,10 @@ pdflatex template.tex
 pdflatex template.tex
 ```
 
+## Support
+
+If you find this template useful, please consider giving it a ⭐ star on GitHub!
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
