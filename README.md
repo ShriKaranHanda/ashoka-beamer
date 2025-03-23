@@ -2,7 +2,7 @@
   <img src="assets/ashoka.png" alt="Ashoka University Logo" width="300">
 </p>
 
-# Ashoka University Beamer Template
+# Ashoka University LaTeX Beamer Template
 
 LaTeX Beamer template for Ashoka University presentations.
 
