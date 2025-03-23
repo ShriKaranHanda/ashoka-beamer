@@ -47,12 +47,6 @@ Basic:
 pdflatex template.tex
 ```
 
-With navigation:
-```bash
-pdflatex template.tex
-pdflatex template.tex
-```
-
 ## Support
 
 If you find this template useful, please consider giving it a ⭐ star on GitHub!
