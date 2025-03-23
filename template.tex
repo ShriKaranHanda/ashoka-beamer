@@ -1,0 +1,169 @@
+\documentclass[
+    9pt,
+    aspectratio=169,
+]{beamer}
+
+\graphicspath{{media/}{./}}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usetheme{Madrid} 
+\definecolor{myRed}{RGB}{170, 0, 0}
+\definecolor{myOrange}{RGB}{13,56,98}
+
+\setbeamercolor*{structure}{bg=myRed!20,fg=myRed!90}
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=myRed,bg=white}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=myRed} 
+
+\setbeamercolor{frametitle}{bg=myRed!85,fg=white}
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+
+\setbeamercolor{section in head/foot}{fg=myOrange, bg=white}
+
+\setbeamercolor{item projected}{bg=myOrange}
+\setbeamertemplate{enumerate items}{bg=myOrange}
+
+\setbeamercolor{itemize item}{fg=myOrange}
+\setbeamercolor{itemize subitem}{fg=myOrange}
+
+\setbeamercolor{button}{bg=myOrange}
+
+\setbeamercolor{section in toc}{fg=black}
+\setbeamercolor{subsection in toc}{fg=black}
+
+\setbeamercolor{block title}{bg=myOrange, fg=white}
+\setbeamercolor{block body}{bg=myOrange!20}
+
+\usefonttheme{serif}
+\usepackage{palatino}
+\usepackage[default]{opensans}
+\useinnertheme{circles}
+
+\useoutertheme{miniframes}
+
+\title[Title]{Title}
+\subtitle[Subtitle]{Subtitle}
+\author[Author]{Author}
+
+\institute[]{Institute}
+\date[Date]{Date}
+%\date[\today]
+
+\logo{\includegraphics[width=2.5cm]{ashoka.png}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Introduction \& Background}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{itemize}
+    \item \textbf{Topic 1:} Brief description
+    \item \textbf{Topic 2:} Brief description with sub-points
+    \item \textbf{Key points:} Important takeaways 
+\end{itemize}
+
+\column{0.5\textwidth}
+\begin{block}{Literature Highlights}
+    \begin{itemize}
+        \item Key prior work 1
+        \item Key prior work 2
+        \item Current state-of-the-art
+    \end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+\section{Methodology}
+
+\begin{frame}
+\frametitle{System \& Methodology}
+\begin{columns}
+\column{0.5\textwidth}
+% Add system diagram here
+\begin{center}
+[Diagram Placeholder]
+\end{center}
+
+\textbf{System Components:}
+\begin{itemize}
+    \item Component 1 with key parameters
+    \item Component 2 with key parameters
+\end{itemize}
+
+\column{0.5\textwidth}
+\begin{block}{Approach}
+    \begin{itemize}
+        \item Key technique 1
+        \item Key technique 2
+        \item Process overview
+    \end{itemize}
+\end{block}
+
+\begin{align}
+    y = f(x)  % Example equation
+\end{align}
+\end{columns}
+\end{frame}
+
+\section{Experiments \& Results}
+
+\begin{frame}
+\frametitle{Experiments \& Results}
+\begin{columns}
+\column{0.4\textwidth}
+% Results visualization
+\begin{center}
+[Results Graph]
+\end{center}
+
+\column{0.6\textwidth}
+\begin{block}{Setup \& Findings}
+    \begin{itemize}
+        \item \textbf{Configuration:} Key parameters
+        \item \textbf{Finding 1:} Description and significance
+        \item \textbf{Finding 2:} Description and significance
+        \item \textbf{Finding 3:} Description and significance
+    \end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusion \& Future Work}
+\begin{block}{Key Contributions}
+    \begin{itemize}
+        \item Main achievement 1
+        \item Main achievement 2
+        \item Main achievement 3
+    \end{itemize}
+\end{block}
+
+\begin{block}{Future Directions}
+    \begin{itemize}
+        \item Potential improvement 1
+        \item Extension opportunity 1
+    \end{itemize}
+\end{block}
+
+\begin{center}
+\vspace{0.5cm}
+\Large Thank you!
+
+\normalsize
+Contact: your.email@domain.com
+\end{center}
+\end{frame}
+
+\end{document} 
