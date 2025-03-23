@@ -3,7 +3,7 @@
     aspectratio=169,
 ]{beamer}
 
-\graphicspath{{media/}{./}}
+\graphicspath{{./media/}{./}}
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{algorithm}
@@ -46,15 +46,13 @@
 
 \useoutertheme{miniframes}
 
-\title[Title]{Title}
-\subtitle[Subtitle]{Subtitle}
-\author[Author]{Author}
+\title[Tensor Core Optimization]{Leveraging Tensor Core Architecture for Mixed-Precision Neural Network Inference}
+\subtitle[Quantization Effects]{Quantitative Analysis of INT8/FP16 Throughput-Accuracy Tradeoffs}
+\author[Karan Handa]{Karan Handa}
 
-\institute[]{Institute}
-\date[Date]{Date}
-%\date[\today]
+\institute[]{Department of Computer Science, Ashoka University}
 
-\logo{\includegraphics[width=2.5cm]{ashoka.png}}
+\logo{\includegraphics[width=2cm]{ashoka.png}}
 
 \begin{document}
 
@@ -67,21 +65,26 @@
 \begin{frame}
 \frametitle{Introduction \& Background}
 \begin{columns}
-\column{0.5\textwidth}
+\column{0.4\textwidth}
 \begin{itemize}
-    \item \textbf{Topic 1:} Brief description
-    \item \textbf{Topic 2:} Brief description with sub-points
-    \item \textbf{Key points:} Important takeaways 
+    \item \textbf{Tensor Cores:} Specialized hardware units for matrix operations
+    \item \textbf{Mixed Precision:} Combines FP16/INT8 computation with FP32 accumulation
+    \item \textbf{Key equation:} $\mathbf{D} = \mathbf{A} \cdot \mathbf{B} + \mathbf{C}$ \quad \text{where } $\mathbf{A} \in \mathbb{R}^{m \times k}, \mathbf{B} \in \mathbb{R}^{k \times n}, \mathbf{C}, \mathbf{D} \in \mathbb{R}^{m \times n}$
 \end{itemize}
 
-\column{0.5\textwidth}
+\column{0.4\textwidth}
 \begin{block}{Literature Highlights}
     \begin{itemize}
-        \item Key prior work 1
-        \item Key prior work 2
-        \item Current state-of-the-art
+        \item NVIDIA's work on Tensor Core architecture (2018)
+        \item Microsoft's ZeroQuant quantization framework
+        \item Current SOTA: 4-bit quantization with 0.5\% accuracy loss
     \end{itemize}
 \end{block}
+
+\begin{align}
+    \text{Speedup} = \frac{T_{\text{FP32}}}{T_{\text{INT8}}} \approx 2\text{-}4\times
+\end{align}
+
 \end{columns}
 \end{frame}
 
@@ -90,7 +93,7 @@
 \begin{frame}
 \frametitle{System \& Methodology}
 \begin{columns}
-\column{0.5\textwidth}
+\column{0.4\textwidth}
 % Add system diagram here
 \begin{center}
 [Diagram Placeholder]
@@ -102,7 +105,7 @@
     \item Component 2 with key parameters
 \end{itemize}
 
-\column{0.5\textwidth}
+\column{0.4\textwidth}
 \begin{block}{Approach}
     \begin{itemize}
         \item Key technique 1
@@ -128,7 +131,7 @@
 [Results Graph]
 \end{center}
 
-\column{0.6\textwidth}
+\column{0.4\textwidth}
 \begin{block}{Setup \& Findings}
     \begin{itemize}
         \item \textbf{Configuration:} Key parameters
